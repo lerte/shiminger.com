@@ -1,0 +1,20 @@
+branches:
+  only:
+    - master
+language: node_js
+node_js:
+  - "node"
+cache:
+  directories:
+    - node_modules
+install:
+  - yarn
+  - yarn generate
+deploy: 
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  target_branch: gh-pages
+  on:
+    branch: master
