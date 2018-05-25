@@ -1,0 +1,29 @@
+{
+  "name": "shiminger.com",
+  "version": "1.0.0",
+  "description": "Nuxt.js TypeScript Vuetify project",
+  "author": "Lerte Smith<lerte@qq.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/proxy": "^1.2.4",
+    "@nuxtjs/pwa": "^2.0.8",
+    "@nuxtjs/vuetify": "^0.4.2",
+    "nuxt": "^1.4.0",
+    "nuxt-property-decorator": "^1.2.0",
+    "vuex-class": "^0.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.6",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "ts-loader": "^3.5.0",
+    "typescript": "^2.7.2"
+  }
+}
