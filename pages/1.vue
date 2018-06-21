@@ -31,7 +31,7 @@
             <v-card-text>
               <p>{{question.content}}</p>
               <ul>
-                <li v-for="option in question.options">
+                <li v-for="(option, index) in question.options" :key="index">
                   {{option}}
                 </li>
               </ul>

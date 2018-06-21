@@ -30,8 +30,7 @@ export default {
   },
   css: ["~/assets/styles/main.styl"],
   modules: [
-    "@nuxtjs/pwa",
-    "@nuxtjs/axios",
+    ['@nuxtjs/pwa', { workbox: false } ],
     '@nuxtjs/vuetify'
   ],
   axios: {},
