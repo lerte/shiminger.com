@@ -1,10 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer
-      v-model="drawer"
-      fixed
-      app
-      >
+    <v-navigation-drawer v-model="drawer" fixed app>
       <v-list dense>
         <v-list-tile @click="go('/')">
           <v-list-tile-action>
@@ -87,6 +83,11 @@
     </v-footer>
   </v-app>
 </template>
+
+<style lang="stylus">
+.theme--dark.footer a
+  color: white
+</style>
 
 <script>
 export default {
