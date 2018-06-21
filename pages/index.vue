@@ -1,22 +1,9 @@
 <template>
   <v-content>
-    <ip :ip="ip"></ip>
+    <v-card>
+      <v-card-title>
+        请选择左侧对应的菜单
+      </v-card-title>
+    </v-card>
   </v-content>
 </template>
-
-<script lang="ts">
-import {
-  Component,
-  Vue
-} from "nuxt-property-decorator"
-import { State } from "vuex-class"
-import ip from "~/components/ip.vue"
-@Component({
-  components: {
-    ip
-  }
-})
-export default class index extends Vue {
-  @State ip
-}
-</script>

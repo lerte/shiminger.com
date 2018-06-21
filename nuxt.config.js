@@ -16,7 +16,7 @@ export default {
     baseUrl: process.env.BASE_URL || `http://${host}:${port}`
   },
   head: {
-    title: 'shiminger.com'
+    title: '🐟'
   },
   /*
   ** Customize the progress-bar color
