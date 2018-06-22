@@ -16,7 +16,10 @@ export default {
     baseUrl: process.env.BASE_URL || `http://${host}:${port}`
   },
   head: {
-    title: '<。)#)))≦'
+    title: '<。)#)))≦',
+    link: [
+      { rel: 'stylesheet', href: '//fonts.loli.net/css?family=Roboto:300,400,500,700|Material+Icons' }
+    ]
   },
   /*
   ** Customize the progress-bar color
@@ -33,8 +36,8 @@ export default {
     ['@nuxtjs/pwa', { workbox: false } ],
     '@nuxtjs/vuetify'
   ],
-  axios: {},
   vuetify: {
+    materialIcons: false,
     theme: {
       primary: '#3f51b5',
       secondary: '#757de8',
