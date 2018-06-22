@@ -74,7 +74,7 @@
           </v-card>
           <v-btn color="primary" @click="prevStep(question.id)" :disabled="question.id==1">上一题</v-btn>
           <v-btn color="primary" @click="nextStep(question.id)" :disabled="question.id==questions.length">下一题</v-btn>
-          <v-btn color="info" @click="submit">交卷</v-btn>
+          <v-btn color="info" @click="submit" :disabled="!isFinished">交卷</v-btn>
         </v-stepper-content>
       </v-stepper-items>
     </v-stepper>
@@ -124,6 +124,17 @@
       },
       elapsedTime(){
         return this.second2Minutes(Math.round(this.elapsed/1000))
+      },
+      isFinished(){
+        let flag = true
+        this.questions.forEach((question)=>{
+          if(question.userAnswer instanceof Array){
+            flag = flag && Boolean(question.userAnswer.length)
+          }else{
+            flag = flag && Boolean(question.userAnswer)
+          }
+        })
+        return flag
       }
     },
     methods: {
