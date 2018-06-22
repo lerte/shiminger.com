@@ -2,14 +2,25 @@
   <v-content>
     <v-card>
       <v-card-title>
-        请选择左侧对应的菜单
+        <p class="title info--text">
+          请选择左侧对应的菜单<br/>
+          下面有一些界面的截图
+        </p>
       </v-card-title>
       <v-card-text>
-        <img v-for="(screenshoot, index) in screenshoots" :key="index" :src="screenshoot" />
+        <img class="img-reponsive" v-for="(screenshoot, index) in screenshoots" :key="index" :src="screenshoot" />
       </v-card-text>
     </v-card>
   </v-content>
 </template>
+
+<style lang="stylus">
+img.img-reponsive
+  display: block
+  max-width: 100%
+  height: auto
+</style>
+
 <script>
   export default {
     data: ()=> ({

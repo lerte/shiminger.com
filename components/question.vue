@@ -29,7 +29,7 @@
               </v-subheader>
             </v-card-title>
             <v-card-text>
-              <p>{{question.content}}</p>
+              <p class="subheading primary--text">{{question.content}}</p>
               <ul v-if="question.type!='judgment'">
                 <li v-for="(option, index) in question.options" :key="index">
                   {{option}}
@@ -85,10 +85,10 @@
       <v-card-text>
         <ul>
           <li v-for="(question, index) in questions" :key="index">
-            <p class="title">{{question.content}}</p>
-            <p>用户答案：{{question.userAnswer}}</p>
-            <p v-if="question.answer">正确答案：{{question.answer}}</p>
-            <p v-if="question.answers">参考答案：{{question.answers}}</p>
+            <p class="subheading primary--text">{{question.content}}</p>
+            <p class="info--text">用户答案：{{question.userAnswer}}</p>
+            <p class="success--text" v-if="question.answer">正确答案：{{question.answer}}</p>
+            <p class="success--text" v-if="question.answers">参考答案：{{question.answers}}</p>
           </li>
         </ul>
         <v-btn color="info" @click="redo">重做</v-btn>
@@ -118,31 +118,12 @@
         elapsed: 0
       }
     },
-    watch: {
-      questions: {
-        handler: (val)=>{
-          let correct = 0
-          for(let i = 0; i < val.length; i++){
-            val[i].answer == val[i].userAnswer ? correct + 1 : null
-          }
-          console.log(correct)
-        },
-        deep: true
-      }
-    },
     computed: {
       startTime(){
         return `${this.start.getHours()}:${this.start.getMinutes()}`.replace(/\b(\d)\b/g, "0$1")
       },
       elapsedTime(){
         return this.second2Minutes(Math.round(this.elapsed/1000))
-      },
-      score(){
-        let correct = 0
-        this.questions.forEach((question)=>{
-          question.answer == question.userAnswer ? correct+1 : null
-        })
-        return correct
       }
     },
     methods: {
@@ -172,7 +153,7 @@
         }, 1000)
       },
       second2Minutes(second){
-      if(second){
+        if(second){
           return [parseInt(second / 60 / 60), parseInt(second / 60 % 60), second % 60].join(":").replace(/\b(\d)\b/g, "0$1")
         }else{
           return second
