@@ -41,16 +41,16 @@
             id: 4,
             type: 'multiple',
             content: '以下哪些功能模块需要登录？',
-            options: ['A. 供应商', 'B. 我的商机', 'C. 店铺列表', 'D. 品牌墙', 'F. 首页', 'G. 买家中心', 'H. 卖家中心'],
-            answers: 'B,G,H',
+            options: ['A. 供应商', 'B. 我的商机', 'C. 店铺列表', 'D. 品牌墙', 'E. 首页', 'F. 买家中心', 'G. 卖家中心'],
+            answers: 'B,F,G',
             userAnswer: []
           },
           {
             id: 5,
             type: 'multiple',
             content: '以下哪些功能模块不需要登录？',
-            options: ['A. 供应商', 'B. 我的商机', 'C. 店铺列表', 'D. 品牌墙', 'F. 首页', 'G. 买家中心', 'H. 卖家中心'],
-            answers: 'A,C,D,E,F',
+            options: ['A. 供应商', 'B. 我的商机', 'C. 店铺列表', 'D. 品牌墙', 'E. 首页', 'F. 买家中心', 'G. 卖家中心'],
+            answers: 'A,C,D,E',
             userAnswer: []
           }
         ]
