@@ -80,9 +80,17 @@
     </v-stepper>
     <v-card class="mb-3" v-else>
       <v-card-title>
-        共{{questions.length}}道题
+        参考答案
       </v-card-title>
       <v-card-text>
+        <ul>
+          <li v-for="(question, index) in questions" :key="index">
+            <p class="title">{{question.content}}</p>
+            <p>用户答案：{{question.userAnswer}}</p>
+            <p v-if="question.answer">正确答案：{{question.answer}}</p>
+            <p v-if="question.answers">参考答案：{{question.answers}}</p>
+          </li>
+        </ul>
         <v-btn color="info" @click="redo">重做</v-btn>
       </v-card-text>
     </v-card>

@@ -26,7 +26,7 @@
             id: 2,
             type: 'fill',
             content: '优软商城官方网址是多少？',
-            answers: 'www.usoftmall.com',
+            answer: 'www.usoftmall.com',
             userAnswer: ''
           },
           {
