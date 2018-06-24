@@ -75,19 +75,14 @@
     <nuxt/>
     <v-footer color="primary" dark app>
       <v-layout row wrap>
-        <v-flex xs12 text-xs-center>
+        <v-flex xs12 text-xs-center text--white>
           <span>&copy; 2018</span>
-          <a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备16007833号-1</a>
+          <a class="white--text" href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备16007833号-1</a>
         </v-flex>
       </v-layout>
     </v-footer>
   </v-app>
 </template>
-
-<style lang="stylus">
-.theme--dark.footer a
-  color: white
-</style>
 
 <script>
 export default {

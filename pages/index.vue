@@ -14,13 +14,6 @@
   </v-content>
 </template>
 
-<style lang="stylus">
-img.img-reponsive
-  display: block
-  max-width: 100%
-  height: auto
-</style>
-
 <script>
   export default {
     data: ()=> ({
