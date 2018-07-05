@@ -100,7 +100,7 @@
 <script>
   export default {
     props: {
-        questions: Array
+      questions: Array
     },
     data () {
       return {

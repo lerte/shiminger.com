@@ -5,8 +5,9 @@
 <script>
   import question from '~/components/question'
   export default {
+    layout: 'testing',
     head: {
-      title: '清秀'
+      title: '辛娟'
     },
     components: {
       question
@@ -17,22 +18,23 @@
           {
             id: 1,
             type: 'judgment',
-            content: '卖家中心需在PC端开通',
+            content: '未登录不可查看更多求购信息',
             options: ['✔', '✖'],
-            answer: '✔',
+            answer: '✖',
             userAnswer: null
           },
           {
             id: 2,
-            type: 'fill',
-            content: '卖家中心产品管理包括哪些模块？',
-            answer: '企业产品库、个人产品库、在售产品',
+            type: 'judgment',
+            content: '未开店的供应商不可询价',
+            options: ['✔', '✖'],
+            answer: '✖',
             userAnswer: null
           },
           {
             id: 3,
             type: 'judgment',
-            content: '在售产品交期（天）是一个区间有2个值？',
+            content: '获得商机需要注册开通卖家中心并上传产品',
             options: ['✔', '✖'],
             answer: '✔',
             userAnswer: null
@@ -40,16 +42,17 @@
           {
             id: 4,
             type: 'judgment',
-            content: '卖家中心商机管理里面有公司商机和我的商机',
+            content: '询价供应商时数量（PCS）是必需的',
             options: ['✔', '✖'],
-            answer: '✔',
+            answer: '✖',
             userAnswer: null
           },
           {
             id: 5,
-            type: 'fill',
-            content: '报价交期（天）最大值是多少？',
-            answer: '999',
+            type: 'judgment',
+            content: '我的商机里面给产品报价只支持RMB',
+            options: ['✔', '✖'],
+            answer: '✖',
             userAnswer: null
           }
         ]

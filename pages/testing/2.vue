@@ -5,6 +5,7 @@
 <script>
   import question from '~/components/question'
   export default {
+    layout: 'testing',
     head: {
       title: '周莹'
     },
