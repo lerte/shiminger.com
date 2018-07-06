@@ -216,6 +216,9 @@ export default {
     hideLoading() {
       this.state.loading = false
     }
+  },
+  mounted() {
+    this.selectFinish(this.state.chordTone)
   }
 }
 </script>
