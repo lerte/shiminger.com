@@ -587,8 +587,8 @@ export class ChordSvg {
 			ry: 5
 		});
 		// 和弦网格，代表弦和品
-		this.chordGird = this.createSVG('path', {
-			className: 'chord-gird',
+		this.chordGrid = this.createSVG('path', {
+			className: 'chord-grid',
 			d: 'M25 65 L125 65 M25 85 L125 85 M25 105 L125 105 M25 125 L125 125 M45 45 L45 145 M65 45 L65 145 M85 45 L85 145 M105 45 L105 145 M25 40 L125 40'
 		});
 		// 用于放置可复用的svg元素
@@ -628,7 +628,7 @@ export class ChordSvg {
 		this.defs.appendChild(this.g_block_circle);
 		// svg子元素加入
 		this.svg.appendChild(this.chordRect);
-		this.svg.appendChild(this.chordGird);
+		this.svg.appendChild(this.chordGrid);
 		this.svg.appendChild(this.defs);
 	}
 	// 绘制和弦svg图案

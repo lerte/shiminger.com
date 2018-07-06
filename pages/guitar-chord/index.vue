@@ -17,7 +17,7 @@
     @media screen and (max-width 320px)
       width 120px
       height 135px
-  &-react
+  &-rect
     width 100px
     height 100px
     fill none
@@ -66,10 +66,10 @@ export default {
   },
   methods: {
     hideLoading() {
-      this.refs.chordSelect.hideLoading()
+      this.$refs.chordSelect.hideLoading()
     },
     selectFinish(chordTone) {
-      this.refs.chordDraw.draw(chordTone)
+      this.$refs.chordDraw.draw(chordTone)
     }
   }
 }

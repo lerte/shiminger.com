@@ -113,17 +113,11 @@ export default {
 			}, 200)
 			setTimeout(() => {
 				if (chordResult.length === 0) {
-					this.setState({
-						info: this.randomOne(this.infos.noAnswer)
-					})
+					this.info = this.randomOne(this.infos.noAnswer)
 				} else if (/\.\.\./.test(chordName)) {
-					this.setState({
-						info: this.randomOne(this.infos.hasSvg)
-					})
+					this.info = this.randomOne(this.infos.hasSvg)
 				} else {
-					this.setState({
-						info: this.randomOne(this.infos.hasAnswer)
-					})
+					this.info = this.randomOne(this.infos.hasAnswer)
 				}
 				chordResult.forEach((chordItem) => {
 					svg.drawChord(chordTone, chordItem, document.getElementById("chord_draw"))

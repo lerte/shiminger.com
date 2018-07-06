@@ -17,7 +17,7 @@
             <v-icon>person</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>谭佩 - 简介、入口、主模块、首页</v-list-tile-title>
+            <v-list-tile-title>1 - 简介、入口、主模块、首页</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile @click="go(2)">
@@ -25,7 +25,7 @@
             <v-icon>face</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>周萤 - 商城、banner、统计</v-list-tile-title>
+            <v-list-tile-title>2 - 商城、banner、统计</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile @click="go(3)">
@@ -33,7 +33,7 @@
             <v-icon>face</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>辛娟 - 求购、供应、商机</v-list-tile-title>
+            <v-list-tile-title>3 - 求购、供应、商机</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile @click="go(4)">
@@ -41,7 +41,7 @@
             <v-icon>face</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>刘帅 - 店铺列表、品牌墙</v-list-tile-title>
+            <v-list-tile-title>4 - 店铺列表、品牌墙</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile @click="go(5)">
@@ -49,7 +49,7 @@
             <v-icon>face</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>雪滢 - 买家中心</v-list-tile-title>
+            <v-list-tile-title>5 - 买家中心</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile @click="go(6)">
@@ -57,7 +57,7 @@
             <v-icon>face</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>清秀 - 卖家中心</v-list-tile-title>
+            <v-list-tile-title>6 - 卖家中心</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile @click="go(7)">
@@ -65,7 +65,7 @@
             <v-icon>person</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>石明 - 我、注册、全局搜索</v-list-tile-title>
+            <v-list-tile-title>7 - 我、注册、全局搜索</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
