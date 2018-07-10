@@ -11,7 +11,7 @@
     </rect>
     <!--  36 Black keys (overlap with the white keys)  -->
     <rect 
-      style="fill:black;stroke:white" 
+      style="fill:black;" 
       y="0" width="12" height="80" 
       :key="index"
       :x="/^[B|E]\d?$/i.test(whiteKey) ? (index-1) * 24 + 18 : (index-1) * 24 + 42"
