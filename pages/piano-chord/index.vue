@@ -23,7 +23,7 @@
         </v-select>
       </v-flex>
     </v-layout>
-    <v-layout text-xs-center>
+    <v-layout justify-center>
       <piano></piano>
     </v-layout>
   </v-content>
