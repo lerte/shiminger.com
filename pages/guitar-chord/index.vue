@@ -61,6 +61,9 @@ import ChordSelect from '~/components/chordSelect'
 import ChordDraw from '~/components/chordDraw'
 
 export default {
+  head() {
+    return { title: 'Guitar' }
+  },
   components: {
     ChordSelect, ChordDraw
   },

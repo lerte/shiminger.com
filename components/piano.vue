@@ -21,7 +21,7 @@
     <text
       y="105" fill="black"
       :x="index*24 + 4"
-      :key="index"
+      :key="index+51"
       v-text="whiteKey"
       v-for="(whiteKey, index) in keys.whiteKeys">
     </text>
@@ -30,6 +30,7 @@
 
 <script>
 export default {
+  // https://commons.wikimedia.org/wiki/File:PianoKeyboard.svg
   data: ()=>({
     keys: {
       whiteKeys:[

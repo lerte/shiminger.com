@@ -32,6 +32,9 @@
 <script>
 import piano from '~/components/piano'
 export default {
+  head() {
+    return { title: 'Piano' }
+  },
   components: {
     piano
   },

@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-tabs v-model="active" color="black" dark slider-color="cyan">
-      <v-tab ripple>Font Awesome</v-tab>
+      <v-tab ripple>Font Awesome 4.7.0</v-tab>
       <v-tab ripple>Material Icons</v-tab>
       <v-tab-item>
         <v-card flat>
@@ -35,6 +35,9 @@
 
 <script>
 export default {
+  head() {
+    return { title: 'Icons' }
+  },
   filters: {
     space2underline (name) {
       return name.replace(/\s/g, '_').toLowerCase()

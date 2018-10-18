@@ -16,6 +16,7 @@
     "@nuxtjs/vuetify": "^0.4.2",
     "nuxt-edge": "^2.0.0-25481399.feabdca",
     "nuxt-property-decorator": "^1.2.0",
+    "qrcode.vue": "^1.6.1",
     "vuex-class": "^0.3.0"
   },
   "devDependencies": {

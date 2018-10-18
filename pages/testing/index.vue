@@ -17,6 +17,9 @@
 <script>
   export default {
     layout: 'testing',
+    head() {
+      return { title: 'Testing' }
+    },
     data: ()=> ({
       screenshoots: [
         'http://cdn.shiminger.com/IMG_2719.PNG',

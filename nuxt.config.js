@@ -16,7 +16,7 @@ export default {
     baseUrl: process.env.BASE_URL || `http://${host}:${port}`
   },
   head: {
-    title: '<。)#)))≦',
+    titleTemplate: "SHIMINGER - %s | Full Stack Developer",
     htmlAttrs: {
       lang: 'zh-CN'
     },
