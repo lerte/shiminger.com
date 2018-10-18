@@ -74,7 +74,11 @@
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>测试答题</v-toolbar-title>
     </v-toolbar>
-    <nuxt/>
+    <v-content>
+      <v-slide-y-transition mode="out-in">
+        <nuxt/>
+      </v-slide-y-transition>
+    </v-content>
     <v-footer color="primary" dark app>
       <v-layout row wrap>
         <v-flex xs12 text-xs-center text--white>

@@ -1,5 +1,5 @@
 <template>
-  <v-content>
+  <v-container fluid>
     <v-layout wrap>
       <v-flex sm4 xs12 d-flex pa-4>
         <v-select
@@ -26,7 +26,7 @@
     <v-layout justify-center>
       <piano></piano>
     </v-layout>
-  </v-content>
+  </v-container>
 </template>
 
 <script>

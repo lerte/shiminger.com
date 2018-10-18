@@ -38,6 +38,14 @@
             <v-list-tile-title>测试答题</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
+        <v-list-tile @click="go('/icons')">
+          <v-list-tile-action>
+            <v-icon>mood</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>字体图标</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
         <v-list-tile @click="go('/qr-code')">
           <v-list-tile-action>
             <i class="icon">
@@ -60,7 +68,11 @@
         </v-btn>
       </a>
     </v-toolbar>
-    <nuxt/>
+    <v-content>
+      <v-slide-y-transition mode="out-in">
+        <nuxt/>
+      </v-slide-y-transition>
+    </v-content>
     <v-footer color="primary" dark app>
       <v-layout row wrap>
         <v-flex xs12 text-xs-center text--white>

@@ -1,5 +1,5 @@
 <template>
-  <v-content>
+  <v-container fluid>
     <v-card class="mb-3">
       <v-card-text>
         开始时间：{{startTime}}&nbsp;&nbsp;&nbsp;&nbsp;用时：{{elapsedTime}}
@@ -94,7 +94,7 @@
         <v-btn color="info" @click="redo">重做</v-btn>
       </v-card-text>
     </v-card>
-  </v-content>
+  </v-container>
 </template>
 
 <script>

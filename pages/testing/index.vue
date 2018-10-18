@@ -1,5 +1,5 @@
 <template>
-  <v-content>
+  <v-container fluid>
     <v-card>
       <v-card-title>
         <p class="title info--text">
@@ -11,7 +11,7 @@
         <img class="img-reponsive" v-for="(screenshoot, index) in screenshoots" :key="index" :src="screenshoot" />
       </v-card-text>
     </v-card>
-  </v-content>
+  </v-container>
 </template>
 
 <script>

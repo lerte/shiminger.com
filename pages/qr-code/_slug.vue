@@ -1,6 +1,5 @@
 <template>
-  <v-content>
-    <v-container>
+  <v-container fluid>
     <v-layout>
       <v-flex xs3>
         <div class="qr-wrapper" v-html="qrImage"></div>
@@ -14,8 +13,7 @@
         </v-text-field>
       </v-flex>
     </v-layout>
-    </v-container>
-  </v-content>
+  </v-container>
 </template>
 
 <script>

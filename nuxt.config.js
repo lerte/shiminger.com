@@ -17,8 +17,12 @@ export default {
   },
   head: {
     title: '<。)#)))≦',
+    htmlAttrs: {
+      lang: 'zh-CN'
+    },
     link: [
-      { rel: 'stylesheet', href: '//fonts.loli.net/css?family=Roboto:300,400,500,700|Material+Icons' }
+      { rel: 'stylesheet', href: '//fonts.loli.net/css?family=Roboto:300,400,500,700|Material+Icons' },
+      { rel: 'stylesheet', href: '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'}
     ]
   },
   /*

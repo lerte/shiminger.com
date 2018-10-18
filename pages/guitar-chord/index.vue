@@ -1,8 +1,8 @@
 <template>
-  <v-content class="chord">
+  <v-container fluid class="chord">
     <ChordSelect ref="chordSelect" :selectFinish="selectFinish" />
     <ChordDraw ref="chordDraw" :hideLoading="hideLoading" />
-  </v-content>
+  </v-container>
 </template>
 
 <style lang="stylus">
