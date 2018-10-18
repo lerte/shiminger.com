@@ -1,3 +1,4 @@
+<a href="https://travis-ci.com/nuxtify/shiminger.com"><img src="https://api.travis-ci.com/nuxtify/shiminger.com.svg?branch=master" alt="Build Status"></a>
 # shiminger.com
 
 > Nuxt.js TypeScript Vuetify project
