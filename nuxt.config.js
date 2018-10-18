@@ -37,7 +37,7 @@ export default {
   },
   css: ["~/assets/styles/main.styl"],
   modules: [
-    ['@nuxtjs/pwa', { workbox: false } ],
+    '@nuxtjs/pwa',
     '@nuxtjs/vuetify'
   ],
   vuetify: {
