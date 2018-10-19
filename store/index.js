@@ -1,5 +1,5 @@
 export const state = () => ({
-  search_input: 'こんにちは'
+  search_input: ''
 })
 
 export const mutations = {

@@ -168,6 +168,7 @@
 
 <script>
 export default {
+  name: 'Home',
   head() {
     return { title: 'Home' }
   }

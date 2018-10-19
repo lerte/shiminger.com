@@ -3,13 +3,14 @@
     <v-tabs v-model="active" color="black" dark slider-color="cyan">
       <v-tab ripple>Font Awesome 4.7.0</v-tab>
       <v-tab ripple>Material Icons</v-tab>
-      <v-tab-item>
+      <v-tab-item v-for="(i, index) in 2" :key="index">
         <v-card flat>
           <v-layout row wrap justify-center>
-            <v-flex xl2 lg3 md4 sm6 xs12 pa-1 v-for="(icon, index) of faIcons" :key="index">
+            <v-flex xl2 lg3 md4 sm6 xs12 pa-1 v-for="(icon, index) of searchResult" :key="index">
               <v-card>
                 <v-btn icon>
-                  <i class="fa" :class="icon"></i>
+                  <i class="fa fa-lg" :class="icon" v-if="active == 0"></i>
+                  <v-icon v-else>{{icon}}</v-icon>
                 </v-btn>
                 {{icon}}
               </v-card>
@@ -17,30 +18,44 @@
           </v-layout>
         </v-card>
       </v-tab-item>
-      <v-tab-item>
-        <v-layout row wrap justify-center>
-          <v-flex xl2 lg3 md4 sm6 xs12 pa-1 v-for="(icon, index) of MaterialIcons" :key="index">
-            <v-card>
-              <v-btn icon>
-                <v-icon>{{icon.name|space2underline}}</v-icon>
-              </v-btn>
-              {{icon.name|space2underline}}
-            </v-card>
-          </v-flex>
-        </v-layout>
-      </v-tab-item>
     </v-tabs>
   </v-container>
 </template>
 
 <script>
 export default {
+  name: 'Icons',
   head() {
     return { title: 'Icons' }
   },
   filters: {
     space2underline (name) {
       return name.replace(/\s/g, '_').toLowerCase()
+    }
+  },
+  computed: {
+    searchResult () {
+      let search = this.$store.state.search_input
+      let reg = new RegExp(search, 'i')
+      if(this.active == '0'){
+        return this.faIcons.filter(icon => {
+          if (reg.test(icon)){
+            return icon
+          }
+        })
+      }
+      if(this.active == '1'){
+        let Icons = []
+        for(let i in this.materialIcons){
+          const name = this.materialIcons[i].name.replace(/\s/g, '_').toLowerCase()
+          Icons.push(name)
+        }
+        return Icons.filter(icon => {
+          if (reg.test(icon)){
+            return icon
+          }
+        })
+      }
     }
   },
   data: () => ({
@@ -842,7 +857,7 @@ export default {
       'fa-youtube-play',
       'fa-youtube-square'
     ],
-    MaterialIcons: {
+    materialIcons: {
       e84d: { name: '3d Rotation' },
       eb3b: { name: 'Ac Unit' },
       e190: { name: 'Access Alarm' },
