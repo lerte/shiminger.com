@@ -28,11 +28,6 @@ export default {
   head() {
     return { title: 'Icons' }
   },
-  filters: {
-    space2underline (name) {
-      return name.replace(/\s/g, '_').toLowerCase()
-    }
-  },
   computed: {
     searchResult () {
       let search = this.$store.state.search_input
