@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
-    <v-layout>
-      <v-flex xs3>
+    <v-layout justify-center>
+      <v-flex>
         <qrcode-vue :value="$store.state.search_input" :size="size" level="H"></qrcode-vue>
       </v-flex>
     </v-layout>

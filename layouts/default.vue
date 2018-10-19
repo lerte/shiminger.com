@@ -56,6 +56,14 @@
             <v-list-tile-title>二维码</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
+        <v-list-tile to="/crypto">
+          <v-list-tile-action>
+            <i class="fa fa-2x fa-lock"></i>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>加密</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
       </v-list>
     </v-navigation-drawer>
     <v-toolbar color="primary" dark fixed app>
@@ -100,7 +108,8 @@ export default {
       '/guitar-chord': '吉他和弦',
       '/piano-chord': '钢琴和弦',
       '/icons': '字体图标',
-      '/qr-code': '二维码'
+      '/qr-code': '二维码',
+      '/crypto': '加密'
     }
   }),
   watch: {
