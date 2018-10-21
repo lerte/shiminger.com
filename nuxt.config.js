@@ -37,7 +37,8 @@ export default {
   },
   css: ["~/assets/styles/main.styl"],
   manifest: {
-    name: 'SHIMINGER',
+    name: 'SHIMINGER - Full Stack Developer',
+    short_name: 'SHIMINGER',
     description: 'A Full Stack Developer',
     lang: 'zh-CN'
   },
