@@ -36,6 +36,11 @@ export default {
     dir: 'public'
   },
   css: ["~/assets/styles/main.styl"],
+  manifest: {
+    name: 'SHIMINGER',
+    description: 'A Full Stack Developer',
+    lang: 'zh-CN'
+  },
   modules: [
     '@nuxtjs/pwa',
     '@nuxtjs/vuetify'
