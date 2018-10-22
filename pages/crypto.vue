@@ -14,7 +14,7 @@ import crypto from 'crypto'
 export default {
   name: 'Crypto',
   head() {
-    return { title: 'Icons' }
+    return { title: 'Crypto' }
   },
   computed: {
     md5(){
