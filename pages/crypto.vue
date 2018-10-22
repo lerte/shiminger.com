@@ -13,6 +13,9 @@
 import crypto from 'crypto'
 export default {
   name: 'Crypto',
+  head() {
+    return { title: 'Icons' }
+  },
   computed: {
     md5(){
       let md5 = crypto.createHash('md5')
