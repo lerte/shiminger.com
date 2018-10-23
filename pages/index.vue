@@ -10,12 +10,12 @@
         >
           <img src="~/assets/images/vuetify.png" alt="Vuetify.js" height="200">
           <h1 class="white--text mb-2 display-1 text-xs-center">Parallax Template</h1>
-          <div class="subheading mb-3 text-xs-center">Powered by Kola Design</div>
+          <div class="subheading mb-3 text-xs-center">Powered by Nuxtify</div>
           <v-btn
             class="blue lighten-2 mt-5"
             dark
             large
-            href="//kola.design"
+            href="https://github.com/lerte/nuxtify"
           >
             Get Started
           </v-btn>
@@ -101,7 +101,7 @@
             class="blue lighten-2 mt-5"
             dark
             large
-            href="//kola.design"
+            href="https://github.com/lerte/nuxtify"
           >
             Get Started
           </v-btn>
@@ -154,7 +154,7 @@
                     <v-icon class="blue--text text--lighten-2">email</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
-                    <v-list-tile-title>lerte@kola.design</v-list-tile-title>
+                    <v-list-tile-title>lerte@qq.com</v-list-tile-title>
                   </v-list-tile-content>
                 </v-list-tile>
               </v-list>
