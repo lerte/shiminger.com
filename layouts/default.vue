@@ -117,7 +117,8 @@ export default {
       '/piano-chord': '钢琴和弦',
       '/icons': '字体图标',
       '/qr-code': '二维码',
-      '/crypto': '加密'
+      '/crypto': '加密',
+      '/carry': '夜的钢琴曲'
     }
   }),
   watch: {
