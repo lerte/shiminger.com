@@ -64,6 +64,14 @@
             <v-list-tile-title>加密</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
+        <v-list-tile to="/carry">
+          <v-list-tile-action>
+            <i class="fa fa-2x fa-music"></i>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>夜的钢琴曲</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
       </v-list>
     </v-navigation-drawer>
     <v-toolbar color="primary" dark fixed app>
