@@ -62,6 +62,14 @@
             <v-list-tile-title>加密</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
+        <v-list-tile to="/guitar-score">
+          <v-list-tile-action>
+            <v-icon>library_music</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>吉他谱</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
         <v-list-tile to="/carry">
           <v-list-tile-action>
             <i class="fa fa-2x fa-music"></i>
