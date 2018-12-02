@@ -173,12 +173,47 @@ export default {
         ]
       },
       {
+        title: '成都',
+        poster: require('@/assets/posters/成都.jpg'),
+        notes: [
+          require('@/assets/notes/成都1.png'),
+          require('@/assets/notes/成都2.png'),
+          require('@/assets/notes/成都3.png')
+        ]
+      },
+      {
         title: '未给姐姐递出的信',
         poster: require('@/assets/posters/未给姐姐递出的信.jpg'),
         notes: [
           require('@/assets/notes/未给姐姐递出的信1.png'),
           require('@/assets/notes/未给姐姐递出的信2.png'),
           require('@/assets/notes/未给姐姐递出的信3.png')
+        ]
+      },
+      {
+        title: '玫瑰',
+        poster: require('@/assets/posters/玫瑰.jpg'),
+        notes: [
+          require('@/assets/notes/玫瑰1.png'),
+          require('@/assets/notes/玫瑰2.png'),
+          require('@/assets/notes/玫瑰3.png')
+        ]
+      },
+      {
+        title: '演员',
+        poster: require('@/assets/posters/演员.jpg'),
+        notes: [
+          require('@/assets/notes/演员1.gif'),
+          require('@/assets/notes/演员2.gif'),
+          require('@/assets/notes/演员3.gif')
+        ]
+      },
+      {
+        title: '七月上',
+        poster: require('@/assets/posters/七月上.jpg'),
+        notes: [
+          require('@/assets/notes/七月上1.png'),
+          require('@/assets/notes/七月上2.png')
         ]
       }
     ]
