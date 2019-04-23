@@ -215,6 +215,15 @@ export default {
           require('@/assets/notes/七月上1.png'),
           require('@/assets/notes/七月上2.png')
         ]
+      },
+      {
+        title: '安河桥',
+        poster: require('@/assets/posters/安河桥.jpg'),
+        notes: [
+          require('@/assets/notes/安河桥1.png'),
+          require('@/assets/notes/安河桥2.png'),
+          require('@/assets/notes/安河桥3.png')
+        ]
       }
     ]
   })
