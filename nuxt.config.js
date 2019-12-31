@@ -5,7 +5,7 @@ export default {
       lang: 'zh-CN'
     },
     link: [
-      { rel: 'stylesheet', href: '//fonts.cat.net/css?family=Roboto:300,400,500,700|Material+Icons' },
+      { rel: 'stylesheet', href: '//fonts.loli.net/css?family=Roboto:300,400,500,700|Material+Icons' },
       { rel: 'stylesheet', href: '//cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css'}
     ]
   },
