@@ -110,6 +110,7 @@ export default {
       "/icons": "字体图标",
       "/qr-code": "二维码",
       "/crypto": "加密",
+      "/guitar-score": "吉他谱",
       "/carry": "夜的钢琴曲",
     },
   }),
