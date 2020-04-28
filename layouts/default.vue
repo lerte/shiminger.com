@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer v-model="drawer" fixed app>
+    <v-navigation-drawer v-model="drawer" fixed clipped app>
       <v-list dense>
         <v-list-tile to="/">
           <v-list-tile-action>
@@ -18,24 +18,6 @@
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>吉他和弦</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-        <v-list-tile to="/piano-chord">
-          <v-list-tile-action>
-            <i class="icon">
-              <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="rgba(0,0,0,0.54)"><path d="M864 0h-704c-70.688 0-128 57.312-128 128v768c0 70.688 57.312 128 128 128h704c70.688 0 128-57.312 128-128v-768c0-70.688-57.312-128-128-128zm64 896c0 35.312-28.72 64-64 64h-64v-384h-64v384h-192v-384h-64v384h-192v-384h-64v384h-64c-35.28 0-64-28.688-64-64v-768c0-35.312 28.72-64 64-64h704c35.28 0 64 28.688 64 64v768zM352 0h-192v512c0 35.376 28.656 64 64 64h64c35.344 0 64-28.624 64-64v-512zM608 0h-192v512c0 35.376 28.656 64 64 64h64c35.344 0 64-28.624 64-64v-512zM864 0h-192v512c0 35.376 28.656 64 64 64h64c35.344 0 64-28.624 64-64v-512z"/></svg>
-            </i>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title>钢琴和弦</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-        <v-list-tile to="/testing">
-          <v-list-tile-action>
-            <v-icon>question_answer</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title>测试答题</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile to="/icons">
@@ -80,7 +62,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar color="primary" dark fixed app>
+    <v-toolbar color="primary" dark fixed app clipped-left>
       <v-toolbar-title>
         <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
         {{menu[$route.path]}}
@@ -118,23 +100,23 @@
 
 <script>
 export default {
-  data: ()=> ({
+  data: () => ({
     drawer: null,
     input: null,
     menu: {
-      '/': '首页',
-      '/guitar-chord': '吉他和弦',
-      '/piano-chord': '钢琴和弦',
-      '/icons': '字体图标',
-      '/qr-code': '二维码',
-      '/crypto': '加密',
-      '/carry': '夜的钢琴曲'
-    }
+      "/": "首页",
+      "/guitar-chord": "吉他和弦",
+      "/piano-chord": "钢琴和弦",
+      "/icons": "字体图标",
+      "/qr-code": "二维码",
+      "/crypto": "加密",
+      "/carry": "夜的钢琴曲",
+    },
   }),
   watch: {
-    input(val){
-      this.$store.commit('SET_SEARCH_INPUT', val)
-    }
-  }
-}
+    input(val) {
+      this.$store.commit("SET_SEARCH_INPUT", val);
+    },
+  },
+};
 </script>

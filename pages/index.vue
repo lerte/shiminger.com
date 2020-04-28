@@ -15,7 +15,7 @@
             class="blue lighten-2 mt-5"
             dark
             large
-            href="https://github.com/lerte/nuxtify"
+            href="https://github.com/lerte"
           >
             Get Started
           </v-btn>
@@ -101,7 +101,7 @@
             class="blue lighten-2 mt-5"
             dark
             large
-            href="https://github.com/lerte/nuxtify"
+            href="https://github.com/lerte"
           >
             Get Started
           </v-btn>
@@ -168,9 +168,9 @@
 
 <script>
 export default {
-  name: 'Home',
+  name: "Home",
   head() {
-    return { title: 'Home' }
-  }
-}
+    return { title: "Home" };
+  },
+};
 </script>
