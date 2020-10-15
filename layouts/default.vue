@@ -76,9 +76,9 @@
         v-model="input"
       />
       <v-spacer></v-spacer>
-      <a href="https://github.com/nuxtify/shiminger.com" target="_blank">
+      <a title="Crephy Cosmetics" href="https://crephy.com" target="_blank">
         <v-btn icon>
-          <i class="fa fa-2x fa-github"></i>
+          <i class="fa fa-2x fa-shopping-cart"></i>
         </v-btn>
       </a>
     </v-toolbar>
