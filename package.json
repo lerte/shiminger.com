@@ -9,6 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "push": "push-dir --dir=public --branch=gh-pages --cleanup --force --verbose",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "dependencies": {
