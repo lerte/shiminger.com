@@ -91,7 +91,7 @@
       <v-layout row wrap>
         <v-flex xs12 text-xs-center text--white>
           <span>&copy; 2018</span>
-          <a class="white--text" href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备16007833号-1</a>
+          <a class="white--text" href="https://beian.miit.gov.cn" target="_blank">粤ICP备16007833号-1</a>
         </v-flex>
       </v-layout>
     </v-footer>
